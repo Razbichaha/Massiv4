@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Massiv4", "Massiv4.csproj", "{8720CCF4-F635-496B-A0CB-9D1B25A2BE4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8720CCF4-F635-496B-A0CB-9D1B25A2BE4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8720CCF4-F635-496B-A0CB-9D1B25A2BE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8720CCF4-F635-496B-A0CB-9D1B25A2BE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8720CCF4-F635-496B-A0CB-9D1B25A2BE4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6CD8638-84B9-4464-89FB-D5AEC4C1A15F}
+	EndGlobalSection
+EndGlobal
