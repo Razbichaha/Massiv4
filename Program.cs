@@ -9,7 +9,7 @@ namespace Massiv4
             Console.Write("Введите любое число и я его запомню\nвведите sum - сложение введеных чисел\nвведите exit - закрытие программы\n");
 
             bool continueCycle = true;
-            int[] number = new int[0];
+            int[] numbers = new int[0];
            
             while(continueCycle)
             {
@@ -21,7 +21,7 @@ namespace Massiv4
 
                         int sum = 0;
 
-                        foreach(int i in number)
+                        foreach(int i in numbers)
                         {
                             sum += i;
                         }
@@ -36,15 +36,15 @@ namespace Massiv4
                         break;
                     default:
 
-                        int[] temp = new int[number.Length + 1];
+                        int[] temp = new int[numbers.Length + 1];
 
-                        for (int i= 0;i < number.Length;i++)
+                        for (int i= 0;i < numbers.Length;i++)
                         {
-                            temp[i] = number[i];
+                            temp[i] = numbers[i];
                         }
                         
-                        number = temp;
-                        number[number.Length-1] = Convert.ToInt32( inputString);
+                        numbers = temp;
+                        numbers[numbers.Length-1] = Convert.ToInt32( inputString);
 
                         break;
                 } 
