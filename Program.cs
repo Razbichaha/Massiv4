@@ -8,18 +8,17 @@ namespace Massiv4
         {
             Console.Write("Введите любое число и я его запомню\nвведите sum - сложение введеных чисел\nвведите exit - закрытие программы\n");
 
-            bool stopPrormam = true;
-            string inputString = Console.ReadLine();
+            bool continueCycle = true;
             int[] number = new int[0];
-            int iteration = 0;
-
-            while(stopPrormam)
+           
+            while(continueCycle)
             {
+                string inputString = Console.ReadLine();
 
                 switch(inputString)
                 {
                     case "sum":
-                        inputString = "0" + "";
+
                         int sum = 0;
 
                         foreach(int i in number)
@@ -32,27 +31,23 @@ namespace Massiv4
                         break;
                     case "exit":
 
-                        stopPrormam = false;
+                        continueCycle = false;
 
                         break;
                     default:
 
                         int[] temp = new int[number.Length + 1];
-                        int tmp = 0;
 
-                        foreach(int i in number)
+                        for (int i= 0;i < number.Length;i++)
                         {
-                            temp[tmp] = i;
-                            tmp++;
+                            temp[i] = number[i];
                         }
                         
                         number = temp;
-                        number[iteration] = Convert.ToInt32( inputString);
-                        iteration++;
+                        number[number.Length-1] = Convert.ToInt32( inputString);
 
                         break;
                 } 
-                inputString = Console.ReadLine();
             }
         }
     }
